@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hill Technology Group | Data, Automation & Operational Excellence</title>
+  <meta name="description" content="Turn better data and smarter systems into measurable business outcomes. Hill Technology Group delivers analytics, automation, and operational optimization." />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#2563eb;--accent-dark:#1d4ed8;--accent-soft:#dbeafe;--white:#fff;--text:#0f172a;--text-soft:#475569;--line:#e2e8f0;--shadow:0 12px 35px rgba(15,23,42,.12);--shadow-strong:0 20px 60px rgba(15,23,42,.18);--max:1120px;--radius:18px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);background:#f8fafc}
+    .container{width:min(100% - 2rem,var(--max));margin:0 auto}
+    .topbar{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(226,232,240,.85)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between}
+    .nav-links{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap}
+    .nav-links a{display:flex;align-items:center}
+    .nav-links .btn{margin-left:0.5rem}
+    .brand{display:flex;align-items:center;gap:.9rem;font-weight:800}
+    .brand-mark{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;box-shadow:var(--shadow)}
+    .nav-links{display:flex;gap:1.25rem;flex-wrap:wrap}
+    .nav-links a{font-weight:600;color:#334155}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.95rem 1.25rem;border-radius:999px;font-weight:700;border:1px solid transparent}
+    .btn-primary{background:var(--accent);color:#ffffff !important;box-shadow:var(--shadow)}
+    .btn-primary *{color:#ffffff !important}
+    .btn-primary a{color:#ffffff}
+    .btn-secondary{background:#fff;border-color:var(--line)}
+
+    .hero{padding:5.5rem 0 4.5rem;background:radial-gradient(circle at top right,rgba(37,99,235,.16),transparent 28%),linear-gradient(180deg,#fff 0%,#eff6ff 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+    .eyebrow{display:inline-block;padding:.45rem .8rem;border-radius:999px;background:var(--accent-soft);color:var(--accent-dark);font-weight:700;font-size:.9rem;margin-bottom:1rem}
+    h1,h2,h3{margin:0 0 1rem;line-height:1.1;letter-spacing:-.03em}
+    h1{font-size:clamp(2.6rem,5vw,4.6rem);max-width:11ch}
+    .hero-lead{font-size:1.12rem;color:var(--text-soft);max-width:60ch;margin:0 0 1.25rem}
+    .hero-actions{display:flex;gap:.9rem;margin-bottom:.75rem}
+    .hero-subnote{font-size:.95rem;color:#64748b;margin:0 0 1.25rem}
+
+    .hero-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1rem}
+    .hero-chip{display:flex;align-items:center;justify-content:center;gap:.6rem;padding:1.05rem;border-radius:16px;background:#fff;border:1px solid rgba(226,232,240,.9);box-shadow:var(--shadow);font-weight:600;text-align:center}
+
+    .hero-panel{padding:1.6rem;background:linear-gradient(180deg,#0f172a 0%,#111827 100%);color:#fff;border-radius:28px;box-shadow:var(--shadow-strong)}
+    .hero-panel p{color:#cbd5e1}
+    .mini{display:grid;gap:1.1rem;margin-top:1.25rem}
+    .stat-card{padding:1.2rem;background:rgba(255,255,255,.06);border-radius:16px}
+    .stat-card strong{display:block;margin-bottom:.4rem}
+    .stat-card span{display:block;color:#cbd5e1;line-height:1.5}
+
+    section{padding:4.5rem 0}
+    .section-head{max-width:800px;margin:0 auto 1.5rem;text-align:center}
+    .section-head p{color:var(--text-soft)}
+
+    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+    .card{padding:1.5rem;background:#fff;border:1px solid rgba(226,232,240,.9);border-radius:var(--radius);box-shadow:var(--shadow)}
+
+    .process-step-number{width:36px;height:36px;border-radius:999px;background:var(--accent-soft);display:grid;place-items:center;font-weight:800;color:var(--accent-dark);margin-bottom:.6rem}
+
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:1.25rem}
+    form{display:grid;gap:1rem}
+    input,textarea,select{padding:.9rem;border-radius:12px;border:1px solid #cbd5e1}
+
+    @media(max-width:900px){.hero-grid,.grid-3,.contact-grid,.hero-points{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <div class="brand"><div class="brand-mark">HT</div>Hill Technology Group</div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">Book Consultation</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Data • Automation • Operations</span>
+      <h1>Run your business on better systems.</h1>
+      <p class="hero-lead">We turn scattered data and manual processes into clear insights and streamlined workflows—so your business runs faster, cleaner, and with less friction.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+        <a href="#services" class="btn btn-secondary">See How It Works</a>
+      </div>
+      <p class="hero-subnote">Built for operators who want clarity, speed, and scalable systems.</p>
+
+      <div class="hero-points">
+        <div class="hero-chip">📊 Data Clarity</div>
+        <div class="hero-chip">⚙️ Automated Workflows</div>
+        <div class="hero-chip">📈 Operational Scale</div>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <h2>Common challenges</h2>
+      <p>We focus on fixing the hidden inefficiencies that slow your business down.</p>
+      <div class="mini">
+        <div class="stat-card"><strong>Manual work overload</strong><span>Too many repetitive tasks and workarounds.</span></div>
+        <div class="stat-card"><strong>Limited visibility</strong><span>Data exists, but not in a useful or actionable way.</span></div>
+        <div class="stat-card"><strong>Disconnected systems</strong><span>Tools don’t communicate, creating friction.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>What we deliver</h2>
+      <p>Focused solutions that create measurable improvements in how your business operates.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card"><h3>Analytics & Insights</h3><p>Transform raw business data into clear reporting and actionable decisions.</p></div>
+      <div class="card"><h3>Workflow Design</h3><p>Redesign processes to remove bottlenecks and reduce wasted effort.</p></div>
+      <div class="card"><h3>Automation Systems</h3><p>Implement connected systems that eliminate manual tasks and improve flow.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Outcomes</h2>
+      <p>Not just better tools—better ways of operating.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card"><h3>Less manual work</h3><p>Free up hours by removing repetitive admin tasks.</p></div>
+      <div class="card"><h3>Clearer decisions</h3><p>Make faster decisions with reliable, visible data.</p></div>
+      <div class="card"><h3>Stronger operations</h3><p>Run your business with systems built to scale.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <div class="section-head">
+      <h2>How we work</h2>
+      <p>A focused process designed to deliver results quickly and practically.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card"><div class="process-step-number">1</div><h3>Diagnose</h3><p>Identify friction points, inefficiencies, and missed opportunities.</p></div>
+      <div class="card"><div class="process-step-number">2</div><h3>Design</h3><p>Create a clear plan to improve workflows, data, and systems.</p></div>
+      <div class="card"><div class="process-step-number">3</div><h3>Deploy</h3><p>Implement solutions that deliver immediate operational improvements.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2>Start the conversation</h2>
+      <p>Tell us where your operations feel slow, unclear, or inefficient.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="card">
+        <h3>Let’s talk</h3>
+        <p>If you’re looking to reduce manual work, improve visibility, or streamline operations, we can help.</p>
+        <p><strong>Email:</strong> support@hill-technology.com</p>
+      </div>
+
+      <div class="card">
+        <form action="https://formspree.io/f/yourformid" method="POST">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <select name="focus" required>
+            <option value="">What do you want to improve?</option>
+            <option>Reporting & data</option>
+            <option>Workflow efficiency</option>
+            <option>Automation systems</option>
+          </select>
+          <textarea name="message" placeholder="Tell us about your business" required></textarea>
+          <button class="btn btn-primary">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="text-align:center;padding:2rem;color:#64748b">
+  © <span id="year"></span> Hill Technology Group
+</footer>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+</body>
+</html>
+
